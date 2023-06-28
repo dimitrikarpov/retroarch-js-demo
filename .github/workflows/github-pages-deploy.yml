@@ -40,7 +40,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          REACT_APP_BASENAME: "/retroarch-js-demo"
+          PUBLIC_URL: "/retroarch-js-demo"
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact

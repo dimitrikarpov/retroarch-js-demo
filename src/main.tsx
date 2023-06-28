@@ -6,21 +6,24 @@ import { Layout } from "./components/layout"
 import { FromCollection } from "./components/from-collection/from-collection"
 import { FromLocal } from "./components/from-local/from-local"
 
-const router = createBrowserRouter([
-  {
-    element: <Layout />,
-    children: [
-      {
-        path: "/",
-        element: <FromCollection />,
-      },
-      {
-        path: "/local",
-        element: <FromLocal />,
-      },
-    ],
-  },
-])
+const router = createBrowserRouter(
+  [
+    {
+      element: <Layout />,
+      children: [
+        {
+          path: "/",
+          element: <FromCollection />,
+        },
+        {
+          path: "/local",
+          element: <FromLocal />,
+        },
+      ],
+    },
+  ],
+  { basename: "/retroarch-js-demo" },
+)
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>

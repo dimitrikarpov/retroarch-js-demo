@@ -15,7 +15,10 @@ export const CoreSelect: React.FunctionComponent<Props> = ({
   return (
     <div className="flex gap-3 justify-center">
       {cores.map((core) => {
-        const logo = core === "fceumm" ? "/NES_logo.svg" : "SEGA_logo.svg"
+        const logo =
+          core === "fceumm"
+            ? `${process.env.PUBLIC_URL}/NES_logo.svg`
+            : `${process.env.PUBLIC_URL}/SEGA_logo.svg`
 
         return (
           <div

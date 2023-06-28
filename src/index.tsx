@@ -1,10 +1,10 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
-import "./index.css"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import { Layout } from "./components/layout"
 import { FromCollection } from "./components/from-collection/from-collection"
 import { FromLocal } from "./components/from-local/from-local"
+import { Layout } from "./components/layout"
+import "./index.css"
 
 console.log("---", process.env)
 

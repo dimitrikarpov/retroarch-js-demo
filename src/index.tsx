@@ -24,6 +24,7 @@ const router = createBrowserRouter(
       ],
     },
   ],
+  { basename: process.env?.BASENAME },
   // { basename: "/retroarch-js-demo" },
 )
 

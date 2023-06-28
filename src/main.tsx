@@ -6,8 +6,7 @@ import { Layout } from "./components/layout"
 import { FromCollection } from "./components/from-collection/from-collection"
 import { FromLocal } from "./components/from-local/from-local"
 
-// @ts-ignore
-console.log("----------->", process.env)
+console.log("----------->", import.meta.env)
 
 const router = createBrowserRouter(
   [

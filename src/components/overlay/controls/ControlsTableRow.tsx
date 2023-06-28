@@ -18,7 +18,7 @@ export const ControlsTableRow: React.FunctionComponent<Props> = ({
 
       <td>
         <img
-          src={icons.keyboard.path}
+          src={withPublic(icons.keyboard.path)}
           alt=""
           className="pixelated h-8 max-w-none"
           title={icons.keyboard.tooltip}
@@ -28,7 +28,7 @@ export const ControlsTableRow: React.FunctionComponent<Props> = ({
 
       <td>
         <img
-          src={icons.ps.path}
+          src={withPublic(icons.ps.path)}
           alt=""
           className="pixelated h-8 max-w-none"
           title={icons.ps.tooltip}
@@ -38,7 +38,7 @@ export const ControlsTableRow: React.FunctionComponent<Props> = ({
 
       <td>
         <img
-          src={icons.xbox.path}
+          src={withPublic(icons.xbox.path)}
           alt=""
           className="pixelated h-8 max-w-none"
           title={icons.xbox.tooltip}
@@ -47,4 +47,8 @@ export const ControlsTableRow: React.FunctionComponent<Props> = ({
       </td>
     </tr>
   )
+}
+
+const withPublic = (path: string) => {
+  return `${process.env.PUBLIC_URL}/${path}`
 }

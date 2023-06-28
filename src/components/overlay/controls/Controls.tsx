@@ -17,7 +17,11 @@ export const Controls: React.FunctionComponent<Props> = ({ config }) => {
   return (
     <div>
       <div className="relative w-[450px]">
-        <img src={config.image} className="w-full" alt="" />
+        <img
+          src={`${process.env.PUBLIC_URL}/${config.image}`}
+          className="w-full"
+          alt=""
+        />
 
         {config.elements.map(({ name, mark: { top, left } }) => (
           <ControllerDotMark

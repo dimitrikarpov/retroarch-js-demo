@@ -2,7 +2,12 @@ import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react"
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  base: "/retroarch-js-demo",
-  plugins: [react()],
+export default defineConfig(({ command, mode }) => {
+  return {
+    define: {
+      base: "/retroarch-js-demo",
+      plugins: [react()],
+      "process.env.YOUR_STRING_VARIABLE": "777",
+    },
+  }
 })

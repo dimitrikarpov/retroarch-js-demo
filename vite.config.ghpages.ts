@@ -7,7 +7,6 @@ export default defineConfig(({ command, mode }) => {
     define: {
       base: "/retroarch-js-demo",
       plugins: [react()],
-      "process.env.YOUR_STRING_VARIABLE": "777",
     },
   }
 })

@@ -6,6 +6,9 @@ import { Layout } from "./components/layout"
 import { FromCollection } from "./components/from-collection/from-collection"
 import { FromLocal } from "./components/from-local/from-local"
 
+// @ts-ignore
+console.log("----------->", process.env)
+
 const router = createBrowserRouter(
   [
     {
@@ -24,9 +27,6 @@ const router = createBrowserRouter(
   ],
   { basename: "/retroarch-js-demo" },
 )
-
-// @ts-ignore
-console.log("----------->", process.env)
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>

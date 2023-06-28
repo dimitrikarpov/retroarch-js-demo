@@ -39,7 +39,7 @@ export const Emulator: React.FunctionComponent<Props> = ({
         romBinary={romBinary}
         loadOnMount
       >
-        <Retroarch.LoaderScreen.Progress />
+        {/* <Retroarch.LoaderScreen.Progress /> */}
       </Retroarch.LoaderScreen>
     </Retroarch>
   )

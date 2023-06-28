@@ -6,8 +6,6 @@ import { FromLocal } from "./components/from-local/from-local"
 import { Layout } from "./components/layout"
 import "./index.css"
 
-console.log("---", process.env)
-
 const router = createBrowserRouter(
   [
     {

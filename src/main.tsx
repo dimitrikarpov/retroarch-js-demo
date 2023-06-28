@@ -6,7 +6,7 @@ import { Layout } from "./components/layout"
 import { FromCollection } from "./components/from-collection/from-collection"
 import { FromLocal } from "./components/from-local/from-local"
 
-console.log("import.meta.env.BASE_URL")
+alert("ggg")
 
 const router = createBrowserRouter(
   [
